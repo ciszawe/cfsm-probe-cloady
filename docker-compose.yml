@@ -1,0 +1,5 @@
+services:
+  cf-probe:
+    image: ghcr.io/huilang-me/cfsm-agent:latest
+    container_name: cf-probe
+    restart: unless-stopped
