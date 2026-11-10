@@ -3,3 +3,7 @@ services:
     image: ghcr.io/huilang-me/cfsm-agent:latest
     container_name: cf-probe
     restart: unless-stopped
+    environment:
+      - SERVER_ID
+      - SECRET
+      - WORKER_URL
